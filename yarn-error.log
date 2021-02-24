@@ -1,0 +1,58 @@
+Arguments: 
+  C:\Program Files (x86)\nodejs\node.exe C:\Program Files (x86)\nodejs\node_modules\yarn\bin\yarn.js add
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\FPC\2.6.0\bin\i386-Win32;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\php7;C:\ProgramData\ComposerSetup\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files (x86)\nodejs\;C:\Users\backiev\.windows-build-tools\python27\;C:\Users\Фархат\AppData\Local\Microsoft\WindowsApps;D:\VS code\Microsoft VS Code\bin;C:\Users\Фархат\AppData\Local\GitHubDesktop\bin;C:\Users\Фархат\AppData\Roaming\npm;C:\Users\backiev\AppData\Roaming\Composer\vendor\bin;C:\Users\backiev\AppData\Local\Microsoft\WindowsApps;C:\Users\backiev\AppData\Roaming\npm;C:\Users\backiev\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  15.0.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: D:\projects\portfolio\package.json: Unexpected token } in JSON at position 314
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\nodejs\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\nodejs\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\nodejs\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "gulp-ex",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bootstrap": "^5.0.0-alpha2",
+      "gulp": "^4.0.2",
+      "normalize.css": "^8.0.1",
+    },
+    "devDependencies": {
+      "browser-sync": "^2.26.12",
+      "del": "^5.1.0",
+      "gulp-autoprefixer": "^7.0.1",
+      "gulp-clean-css": "^4.3.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-csso": "^4.0.1",
+      "gulp-imagemin": "^7.1.0",
+      "gulp-newer": "^1.4.0",
+      "gulp-sass": "^4.1.0",
+      "gulp-uglify-es": "^2.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
