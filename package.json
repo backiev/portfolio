@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.0.0-alpha2",
     "gulp": "^4.0.2",
     "normalize.css": "^8.0.1"
   },

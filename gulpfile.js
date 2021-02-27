@@ -30,8 +30,7 @@ const libsJS = () => {
 
 const libsCSS = () => {
 	return src([
-    	'node_modules/normalize.css/normalize.css',
-        'node_modules/bootstrap/dist/css/bootstrap-grid.min.css',
+    	'node_modules/normalize.css/normalize.css'
 		])
 		.pipe(concat('libs.min.css'))
       .pipe(autoprefix({ 

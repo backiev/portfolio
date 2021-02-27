@@ -1,3 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap')
+
+// VARS 
+
+$text-light_pink: #FCD6E9
+$text-pink: #EE3F95
+$text-purple: #9B6BFF
+$text-light_purple: #E2D5FE
+$text-yellow: #FCE182
+	
+// VARS /
+
+// DEFAULTS
 body 
-	background: #333
+	background: #000
 	color: white
+	font-family: 'Work Sans', sans-serif
+
+h1, h2, h3, h4
+	margin: 0
+	padding: 0
+
+section 
+	margin-top: 150px 
+
+.container
+	max-width: 1100px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	padding: 0 15px
+
+.text-light_pink
+	color: $text-light_pink
+.text-pink
+	color: $text-pink
+.text-purple
+	color: $text-purple
+.text-light_purple
+	color: $text-light_purple
+.text-yellow
+	color: $text-yellow
+.text
+	font-size: 1rem
+
+.block-title
+	font-size: 24px
+	padding: 15px 0 15px 0
+
+
+a 
+	text-decoration: none
+	position: relative
+	transition-property: all
+	transition-duration: 300ms
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+	color: #fff
+a:active
+	color: #fff
+a:after, a:before
+   position: absolute
+   transition-property: all
+   transition-duration: 300ms
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+   content: ''
+   bottom: -4px
+   left: 0
+   right: 0
+   height: 2px
+   border-radius: 1px
+   background-color: rgba(255,255,255,0.25)
+a:before 
+   width: 0
+   background-color: rgba(255,255,255,1)
+a:hover:before
+	width: 100%
+p 
+	margin: 0
+	padding: 0
+
+.opacity
+	opacity: .5
+
+
+.title 
+	opacity: .5
+	text-transform: uppercase
+	font-size: 24px
+	line-height: 1
+	letter-spacing: 5px 
+	font-weight: 600
+
+// DEFAULTS /
+
+.sidebar 
+	width: 20%
+
+	&-wrapper
+		padding-top: 150px
+		position: sticky
+		top: 0
+		div 
+			margin-bottom: 5px
+			font-size: 18px
+			line-height: 20px
+.content 
+	margin-top: 150px
+	width: 75%
+
+.header 
+	h1 
+		font-weight: 400
+		font-size: 28px
+
+.recent
+	&-blocks
+		display: flex
+		flex-flow: column nowrap
+	&-block
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+		align-items: center
+		padding: 15px 0
+		margin: 15px 0 0 0
+		&__text
+			flex-basis: 70%
+			&-content
+				font-size: 24px
+			&-tags 
+				margin: 15px 0 0 0
+				&-item
+					border: 1px solid #38363E
+					background: #38363E
+					padding: 5px 10px
+					border-radius: 9999px
+					font-size: 14px
+				
+	
+.shots
+	&-blocks
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		margin: 50px 0
+		&-item 
+			flex-basis: 45%
+			margin: 0 0 30px 0
+			&__img 
+				width: 100%
+				height: auto
+				border-radius: 20px
+				transition: .5s ease all
+				&:hover
+					transform: scale(1.05)
+footer 
+	margin-bottom: 30px
