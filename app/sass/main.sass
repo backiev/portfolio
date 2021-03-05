@@ -23,42 +23,6 @@ h1, h2, h3, h4
 section 
 	margin-top: 150px 
 
-.container
-	max-width: 1100px
-	margin: 0 auto
-	display: flex
-	justify-content: space-between
-	padding: 0 15px
-
-.text-light_pink
-	color: $text-light_pink
-.text-pink
-	color: $text-pink
-.text-purple
-	color: $text-purple
-.text-light_purple
-	color: $text-light_purple
-.text-yellow
-	color: $text-yellow
-.text
-	font-size: 1rem
-
-.block-title
-	font-size: 24px
-	padding: 15px 0 15px 0
-.d-flex
-	display: flex
-.justify-between
-	justify-content: space-between
-
-
-.fab 
-	transition: .5s ease all
-	opacity: .5
-	cursor: pointer
-.fab:hover
-	opacity: 1
-
 a 
 	text-decoration: none
 	position: relative
@@ -90,12 +54,49 @@ p
 	margin: 0
 	padding: 0
 
+.container
+	max-width: 1100px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	padding: 0 15px
+
+.text-light_pink
+	color: $text-light_pink
+.text-pink
+	color: $text-pink
+.text-purple
+	color: $text-purple
+.text-light_purple
+	color: $text-light_purple
+.text-yellow
+	color: $text-yellow
+.text
+	font-size: 1rem
+
+.block-title
+	font-size: 24px
+	padding: 15px 0 15px 0
+.d-flex
+	display: flex
+.flex-column
+	flex-flow: column nowrap
+.justify-between
+	justify-content: space-between
+.align-center
+	align-items: center
+
+.fab 
+	transition: .5s ease all
+	opacity: .5
+	cursor: pointer
+.fab:hover
+	opacity: 1
+
 .opacity
 	opacity: .5
 
-
 .title 
-	opacity: .5
 	text-transform: uppercase
 	font-size: 24px
 	line-height: 1
@@ -147,8 +148,6 @@ p
 		opacity: 1
 		.links-wrapper-under
 			top: -48px
-
-
 .content 
 	margin-top: 150px
 	width: 75%
@@ -157,14 +156,8 @@ p
 		font-weight: 400
 		font-size: 28px
 .recent
-	&-blocks
-		display: flex
-		flex-flow: column nowrap
 	&-block
-		display: flex
 		flex-flow: row nowrap
-		justify-content: space-between
-		align-items: center
 		padding: 15px 0
 		margin: 15px 0 0 0
 		&__text
@@ -195,5 +188,5 @@ p
 				transition: .5s ease all
 				&:hover
 					transform: scale(1.05)
-footer 
+.footer 
 	margin-bottom: 30px
