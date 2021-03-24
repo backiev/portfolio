@@ -66,6 +66,8 @@ p
 	justify-content: space-between
 	padding: 0 15px
 	position: relative
+	@media screen and (max-width: $size-sm)
+		flex-flow: column nowrap
 
 .text-light_pink
 	color: $text-light_pink
@@ -113,7 +115,6 @@ p
 
 .sidebar 
 	width: 20%
-	position: relative
 	height: 100%
 	padding-top: 150px
 	position: sticky
@@ -121,6 +122,13 @@ p
 	z-index: 100
 	&-burger
 		display: none
+		cursor: pointer
+		div 
+			width: 20px 
+			height: 3px
+			background: #fff
+			border-radius: 15px
+			margin-bottom: 3px
 	&-wrapper-up
 		transition: 1s ease all
 		height: 100%
@@ -182,6 +190,9 @@ p
 			padding: 150px 30px 0 30px
 			z-index: 100
 			transform: translateX(-100%)
+	@media screen and (max-width: $size-sm)
+		position: relative
+		
 
 	
 .content 
@@ -189,6 +200,9 @@ p
 	width: 75%
 	@media screen and (max-width: $size-lg)
 		width: 90%
+	@media screen and (max-width: $size-sm)
+		width: 100%
+		margin-top: 30px
 .header 
 	h1 
 		font-weight: 400
